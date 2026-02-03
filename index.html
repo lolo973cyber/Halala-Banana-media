@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Social App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 id="title">Mini Social App</h2>
+
+<div id="login-section">
+  <input id="username" placeholder="Enter username">
+  <select id="avatar">
+    <option>🙂</option>
+    <option>😎</option>
+    <option>👑</option>
+    <option>🔥</option>
+  </select>
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="app-section" style="display:none;">
+  <h3 id="user-name"></h3>
+
+  <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+  <button onclick="addPost()">Post</button>
+
+  <div id="feed"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
